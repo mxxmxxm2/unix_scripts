@@ -54,3 +54,16 @@ sc() {
 alias gpus='sudo systemctl start vm_gpu; systemctl --no-pager status vm_gpu'
 alias gpuo='sudo systemctl stop vm_gpu; systemctl --no-pager status vm_gpu'
 
+
+
+git1() {
+  ssh-keygen -t ed25519 -C "mxxmxxm@gmail.com" -f ~/.ssh/id_mxxmxxm1 -N ""
+
+  git config --global user.name "max"
+  git config --global user.email mxxmxxm@gmail.com
+  git init
+  git remote add origin git@github.com:mxxmxxm2/unix_scripts.git
+  git branch -M main
+  git add .bash_aliases
+  git commit -m "ok"
+}

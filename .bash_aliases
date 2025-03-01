@@ -62,6 +62,7 @@ gt() {
 # git clone git@github.com:mxxmxxm2/unix_scripts.git _temp
 # mv _temp/.git .
 # git checkout main -f
+# rm -r _temp
 
 #  ssh-keygen -t ed25519 -C "mxxmxxm@gmail.com" -f ~/.ssh/id_mxxmxxm1 -N ""
 

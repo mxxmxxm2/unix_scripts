@@ -66,8 +66,7 @@ gt() {
 
 #  ssh-keygen -t ed25519 -C "mxxmxxm@gmail.com" -f ~/.ssh/id_mxxmxxm1 -N ""
 
-#  git config --global user.name "max"
-#  git config --global user.email mxxmxxm@gmail.com
+#  git config --global user.name "max" && git config --global user.email mxxmxxm@gmail.com
 #  git init
 #  git remote add origin git@github.com:mxxmxxm2/unix_scripts.git
 #  git branch -M main

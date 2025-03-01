@@ -11,7 +11,7 @@ alias ch='cd $HOME'
 alias t='top -c -d 1'
 alias p='ps aux -H'
 
-alias d='sudo df -hT && echo && sudo swapon --show'
+alias d='sudo df -hT && echo && sudo swapon'
 alias l='ls -Alh --group-directories-first'
 
 alias tr='traceroute'

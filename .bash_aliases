@@ -56,7 +56,7 @@ alias gpuo='sudo systemctl stop vm_gpu; systemctl --no-pager status vm_gpu'
 
 
 
-alias gt='git add -u; git commit -m "ok"; git push'
+alias gt='git add -u && git commit -m "ok" && git push'
 
 git1() {
   ssh-keygen -t ed25519 -C "mxxmxxm@gmail.com" -f ~/.ssh/id_mxxmxxm1 -N ""

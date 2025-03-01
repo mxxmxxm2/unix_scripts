@@ -22,7 +22,6 @@ alias n='netstat -lntup'
 alias rrr='bash -c "(sleep 2; reboot)&"; exit'
 alias sss='bash -c "(sleep 2; shutdown now)&"; exit'
 
-
 alias lg='sudo journalctl --since "1 hour ago" --follow'
 alias lg6h='sudo journalctl --since "6 hour ago"'
 alias lg2d='sudo journalctl --since "2 days ago"'
@@ -54,9 +53,11 @@ sc() {
 alias gpus='sudo systemctl start vm_gpu; systemctl --no-pager status vm_gpu'
 alias gpuo='sudo systemctl stop vm_gpu; systemctl --no-pager status vm_gpu'
 
-
-
-alias gt='git add -u && git commit -m "ok" && git push'
+gt() {
+  git add -u && \
+  git commit -m "ok" && \
+  git push
+}
 
 git1() {
   ssh-keygen -t ed25519 -C "mxxmxxm@gmail.com" -f ~/.ssh/id_mxxmxxm1 -N ""

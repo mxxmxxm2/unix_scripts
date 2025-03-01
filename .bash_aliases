@@ -1,4 +1,4 @@
-# User specific aliases and functions 12232
+# User specific aliases and functions
 
 alias ssh_make='ssh-keygen -t ed25519 -C "mxxmxxm@gmail.com" -f ~/.ssh/id_mxxmxxm1 -N ""'
 

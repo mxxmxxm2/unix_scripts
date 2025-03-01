@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+log_file=hdd_log.txt
+temp_file=_tempfile.tmp
+
+echo =============================== >> $log_file
+uname -a                             >> $log_file
+date                                 >> $log_file
+
+for i in {1..3}
+do
+  echo $i...
+  sync
+  dd if=/dev/zero of=$temp_file bs=1M count=1000 2>&1 | tee -a $log_file
+  sync
+  rm -vf $temp_file
+done

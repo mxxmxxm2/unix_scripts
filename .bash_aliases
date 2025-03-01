@@ -1,7 +1,5 @@
 # User specific aliases and functions
 
-alias ssh_make='ssh-keygen -t ed25519 -C "mxxmxxm@gmail.com" -f ~/.ssh/id_mxxmxxm1 -N ""'
-
 alias s='sudo -E '
 
 alias tt='tmux new-session -A -s main'
@@ -59,22 +57,19 @@ gt() {
   git push
 }
 
-git1() {
-  ssh-keygen -t ed25519 -C "mxxmxxm@gmail.com" -f ~/.ssh/id_mxxmxxm1 -N ""
 
-  git config --global user.name "max"
-  git config --global user.email mxxmxxm@gmail.com
-  git init
-  git remote add origin git@github.com:mxxmxxm2/unix_scripts.git
-  git branch -M main
-  git add .bash_aliases
-  git commit -m "ok"
-  
+#  ssh-keygen -t ed25519 -C "mxxmxxm@gmail.com" -f ~/.ssh/id_mxxmxxm1 -N ""
+
+#  git config --global user.name "max"
+#  git config --global user.email mxxmxxm@gmail.com
+#  git init
+#  git remote add origin git@github.com:mxxmxxm2/unix_scripts.git
+#  git branch -M main
+#  git add .bash_aliases
+#  git commit -m "ok"
   
 #  Host github.com
 #  User git
 #  HostName github.com
 #  IdentityFile ~/.ssh/id_mxxmxxm
 #  AddKeysToAgent yes  # Adds key to the agent automatically
-  
-}

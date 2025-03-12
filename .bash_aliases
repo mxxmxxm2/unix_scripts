@@ -8,7 +8,7 @@ alias tt2='tmux new-session -A -s ses2'
 
 alias ch='cd $HOME'
 
-alias t='top -d 1'
+alias t='top -d 2'
 alias p='ps aux -H'
 
 alias d='sudo df -hT && echo && sudo swapon'
@@ -24,32 +24,6 @@ alias lg='sudo journalctl --since "1 hour ago" --follow'
 alias lg6h='sudo journalctl --since "6 hour ago"'
 alias lg2d='sudo journalctl --since "2 days ago"'
 alias lgw='sudo journalctl --since "1 week ago"'
-
-sc() {
-  service=$1
-  command=$2
-
-  if [ ! -z "$command" ]; then
-    case $command in
-      r|re)
-        command=restart
-        ;;
-      0)
-        command=stop
-        ;;
-      1)
-        command=start
-        ;;
-    esac
-
-    systemctl $command $service
-  fi
-
-  systemctl status $service
-}
-
-alias gpus='sudo systemctl start vm_gpu; systemctl --no-pager status vm_gpu'
-alias gpuo='sudo systemctl stop vm_gpu; systemctl --no-pager status vm_gpu'
 
 gt() {
   git pull

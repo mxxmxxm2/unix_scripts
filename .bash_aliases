@@ -25,7 +25,7 @@ alias lg6h='sudo journalctl --since "6 hour ago"'
 alias lg2d='sudo journalctl --since "2 days ago"'
 alias lgw='sudo journalctl --since "1 week ago"'
 
-gt() {
+gh() {
   git pull
   git add -u && \
   git commit -uno -m "ok" && \

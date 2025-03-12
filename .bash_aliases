@@ -1,4 +1,4 @@
-# User specific aliases and functions
+# User spe1cific aliases and functions
 
 alias s='sudo -E '
 

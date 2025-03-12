@@ -52,13 +52,14 @@ alias gpus='sudo systemctl start vm_gpu; systemctl --no-pager status vm_gpu'
 alias gpuo='sudo systemctl stop vm_gpu; systemctl --no-pager status vm_gpu'
 
 gt() {
+  git pull
   git add -u && \
   git commit -m "ok" && \
   git push
 }
 
 
-# copy the .ssh dir to a new host
+# copy the .gitconig and .ssh dir to a new host
 # mkdir _temp
 # git clone git@github.com:mxxmxxm2/unix_scripts.git _temp
 # mv _temp/.git .

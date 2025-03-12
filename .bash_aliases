@@ -58,6 +58,7 @@ gt() {
 }
 
 
+# copy the .ssh dir to a new host
 # mkdir _temp
 # git clone git@github.com:mxxmxxm2/unix_scripts.git _temp
 # mv _temp/.git .

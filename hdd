@@ -3,7 +3,7 @@
 log_file=hdd_log.txt
 temp_file=_tempfile.tmp
 
-echo 1=============================== >> $log_file
+echo 3=============================== >> $log_file
 date                                 >> $log_file
 uname -a                             >> $log_file
 

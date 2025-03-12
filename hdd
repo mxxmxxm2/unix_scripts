@@ -4,8 +4,8 @@ log_file=hdd_log.txt
 temp_file=_tempfile.tmp
 
 echo =============================== >> $log_file
-uname -a                             >> $log_file
 date                                 >> $log_file
+uname -a                             >> $log_file
 
 for i in {1..3}
 do

@@ -54,7 +54,7 @@ alias gpuo='sudo systemctl stop vm_gpu; systemctl --no-pager status vm_gpu'
 gt() {
   git pull
   git add -u && \
-  git commit -m "ok" && \
+  git commit -uno -m "ok" && \
   git push
 }
 

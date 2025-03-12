@@ -8,7 +8,7 @@ alias tt2='tmux new-session -A -s ses2'
 
 alias ch='cd $HOME'
 
-alias t='top -c -d 1'
+alias t='top -d 1'
 alias p='ps aux -H'
 
 alias d='sudo df -hT && echo && sudo swapon'

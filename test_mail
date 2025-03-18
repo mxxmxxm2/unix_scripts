@@ -4,8 +4,6 @@ sHost=$(hostname -s)
 sMessage="mail test from [$sHost] at [$(date)]"
 sFrom="root-$sHost <root>"
 
-#info@maxromanov.com; info@wrapapa.com; info@revolab.net; info@nethlo.com; info@cc45.cc
-
 #sTo="spam@z.maxromanov.com."
 #sTo="info@cc45.cc."
 sTo="max@maxromanov.com."

@@ -8,17 +8,18 @@ alias tt2='tmux new-session -A -s ses2'
 
 alias ch='cd $HOME'
 
-alias t='top -d 2'
-alias p='ps aux -H'
+alias t='sudo top -d 2'
+alias p='sudo ps aux -H'
 
 alias d='sudo df -hT && echo && sudo swapon'
-alias l='ls -Alh --group-directories-first'
+alias l='sudo ls -Alh --group-directories-first'
 
-alias tr='traceroute'
-alias n='netstat -lntup'
+alias tr='sudo traceroute '
+alias pn='sudo ping -i 0.5 '
+alias n='sudo netstat -lntup'
 
-alias rrr='bash -c "(sleep 2; reboot)&"; exit'
-alias sss='bash -c "(sleep 2; shutdown now)&"; exit'
+alias rrrr='bash -c "(sleep 2; reboot)&"; exit'
+alias ssss='bash -c "(sleep 2; shutdown now)&"; exit'
 
 alias lg='sudo journalctl --since "1 hour ago" --follow'
 alias lg6h='sudo journalctl --since "6 hour ago"'

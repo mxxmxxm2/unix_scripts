@@ -1,3 +1,6 @@
+shopt -s histappend
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+
 # User specific aliases and functions
 
 alias s='sudo -E '
@@ -17,9 +20,6 @@ alias l='sudo ls -Alh --group-directories-first'
 alias tr='sudo traceroute '
 alias pn='sudo ping -i 0.5 '
 alias n='sudo netstat -lntup'
-
-alias rrrr='bash -c "(sleep 2; reboot)&"; exit'
-alias ssss='bash -c "(sleep 2; shutdown now)&"; exit'
 
 alias lg='sudo journalctl -n 50 --follow'
 alias lg6h='sudo journalctl --since "6 hour ago"'

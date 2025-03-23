@@ -21,7 +21,7 @@ alias n='sudo netstat -lntup'
 alias rrrr='bash -c "(sleep 2; reboot)&"; exit'
 alias ssss='bash -c "(sleep 2; shutdown now)&"; exit'
 
-alias lg='sudo journalctl --since "1 hour ago" --follow'
+alias lg='sudo journalctl -n 50 --follow'
 alias lg6h='sudo journalctl --since "6 hour ago"'
 alias lg2d='sudo journalctl --since "2 days ago"'
 alias lgw='sudo journalctl --since "1 week ago"'
